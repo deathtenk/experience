@@ -1,0 +1,12 @@
+<div id="grey">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2">
+        <p><bd>created on <%= @post.created_at.strftime "%A, %d %b %Y %l:%M %p" %></bd></p>
+        <h4><%= @post.title %></h4>
+        <p><%= @post.body %></p>
+      </div>
+
+    </div><!-- /row -->
+  </div> <!-- /container -->
+</div><!-- /grey -->

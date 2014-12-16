@@ -53,7 +53,9 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-  resources :work
+  resources :work, only: [:show, :index]
   root 'home#index'
   resources :contacts, only: [:new, :create]
+  resources :blogs, only: :index, path: 'blog'
+  get 'about' => 'about#index'
 end

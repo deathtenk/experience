@@ -8,6 +8,7 @@
 
 
 Work.delete_all
+Post.delete_all
 Work.create(name: "Dice World", 
             description: "Dice World was an experiment in randomization
                          algorithms. First I made a random path algorithm
@@ -27,7 +28,7 @@ Work.create(name: "Fly",
             description: "Fly is an open-source flight simulator written in Unity using Mono through .NET that
                           sends data about the planes position to an LRS through RestSharp. It was made to demonstrate
                           the scalability and flexibility of Tin Can's xAPI. You can learn more about xAPI
-                          <a href=\"http://tincanapi.com/\"> here </a>",
+                          at tincanapi.com",
             github_url: "https://github.com/deathtenk/fly",
             image_url: "http://i.imgur.com/OIoUhqM.jpg")
 Work.create(name: "Dwarf Statements",
@@ -42,3 +43,9 @@ Work.create(name: "Friendbook",
                           still a work in progress. ",
             github_url:"https://github.com/deathtenk/friendbook",
             image_url: "http://www.dogster.com/files/fields/puppy-names-3.jpg")
+
+
+Post.create(title: "My Day",
+            body: "This is a test to see how my blog looks.
+
+                  What's going on guys?")
