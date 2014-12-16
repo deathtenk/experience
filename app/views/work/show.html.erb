@@ -1,0 +1,18 @@
+<!-- +++++ Projects Section +++++ -->
+  
+  <div class="container pt">
+    <div class="row mt">
+      <div class="col-lg-6 col-lg-offset-3 centered">
+        <h3><%= @work.name %></h3>
+        <hr>
+        <p><%= @work.description %></p>
+      </div>
+    </div>
+    <div class="row mt centered"> 
+    <!-- pictures go here -->
+    <!-- Place this tag where you want the button to render. -->
+      <a class="github-button" href="<%= @work.github_url %>" data-icon="octicon-git-branch">Fork</a>
+      <!-- Place this tag right after the last button or just before your close body tag. -->
+      <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+    </div><!-- /row -->
+  </div><!-- /container -->

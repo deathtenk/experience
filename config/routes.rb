@@ -53,5 +53,7 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  resources :work
   root 'home#index'
+  resources :contacts, only: [:new, :create]
 end
