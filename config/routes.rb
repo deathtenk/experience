@@ -53,6 +53,7 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  resources :awards, only: [:show]
   resources :work, only: [:show, :index]
   root 'home#index'
   resources :contacts, only: [:new, :create]

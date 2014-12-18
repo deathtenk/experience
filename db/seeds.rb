@@ -9,6 +9,13 @@
 
 Work.delete_all
 Post.delete_all
+Award.delete_all
+
+Award.create(title: "Baltimore Hackathon - Lookingglass Cybersolutions Sponsor Prize",
+            description: "Our team won Lookingglass Cybersolutions sponsored prize at the 2014 
+            Baltimore Hackathon, building an in-browser, rewindable checkers game with Om/React.js, 
+            ClojureScript and Datascript. Source is available at https://github.com/decomplecting/lg-checkers 
+            and the live demo is available at http://decomplecting.org/lg-checkers")
 Work.create(name: "Dice World", 
             description: "Dice World was an experiment in randomization
                          algorithms. On scene was made with a point that generates rooms

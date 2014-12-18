@@ -1,6 +1,7 @@
 class WorkController < ApplicationController
   def index
     @works = Work.all
+    @awards = Award.all
   end
 
   def show

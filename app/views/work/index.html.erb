@@ -1,7 +1,14 @@
   <div class="container pt">
-    <div class="row mt centered"> 
+  <div class="row mt centered"> 
+     <h3> Works </h3>
       <% for @work in @works %>
       <%= render 'layouts/work_row' %>
-      <% end %>
+      <% end %> 
     </div><!-- /row -->
+    <div class="row mt centered">
+      <h3> Awards </h3>
+      <% for @award in @awards %>
+      <%= render 'layouts/award_row' %>
+      <% end %>
+    </div>
   </div><!-- /container -->
